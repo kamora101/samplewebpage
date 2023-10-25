@@ -1,0 +1,9 @@
+ <body style='display: flex; flex-direction:column; justify-contnent: center'>
+    <h1>Posts Page</h1>
+    {% for post in posts%}
+      <a href="{% url 'post_details' post.id %}" ><h2>{{ post.title }}</h2></a>
+    {% endfor %}
+  </body>
+  <!-- ldskfnglsdfkgn -->
+</html>
+

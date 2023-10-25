@@ -1,0 +1,9 @@
+<html>
+  <body style='display: flex; flex-direction:column; justify-contnent: center'>
+    <form action="{% url 'post_create' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_table }}
+        <button type="submit" class="button">Publish</button>
+      </form>
+  </body>
+</html>
